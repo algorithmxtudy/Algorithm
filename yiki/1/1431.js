@@ -1,13 +1,10 @@
 var kidsWithCandies = function(candies, extraCandies) {
-  // Find the maximum number of candies among all the kids
+  
   const maxCandies = Math.max(...candies);
   
-  // Initialize the result array
   const result = [];
   
-  // Iterate through each kid's candies
   for (let i = 0; i < candies.length; i++) {
-      // Check if adding extra candies makes their total candies greater than or equal to the maximum
       result.push(candies[i] + extraCandies >= maxCandies);
   }
   
